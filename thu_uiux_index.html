@@ -2,24 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Đổi logo hiển thị trên tab thành logo của game -->
     <link rel="icon" type="image/svg+xml" href="/icons/cake.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <!-- Đổi tên hiển thị trên tab thành tên game -->
     <title>Cake Stack Game</title>
   </head>
 <body>
+  <!-- Xây dựng loading screen với logo và progress bar -->
   <div id="loading-screen">
     <img src="/icons/logo.svg" alt="Cake Stack Game Logo" class="logo-image"> 
     <div class="progress-bar-container"> 
       <div id="progress-bar"></div>
     </div>
   </div>
-
+  <!-- Xây dựng ô hiện điểm kèm icon chiếc cúp -->
   <div id="score-container">
     <img src="/icons/cup.svg" alt="Trophy Icon" class="score-icon-img">
     <span id="score-value">0</span>
   </div>
-
+  <!-- Pop-up hướng dẫn chơi game -->
   <div id="instructions" class="popup">
     <div class="popup-content">
       <h2>Instruction</h2>
@@ -27,7 +30,7 @@
       <p>Click, tap or press Space to start game</p>
     </div>
   </div>
-
+  <!-- Pop-up kết thúc -->
   <div id="results" class="popup">
     <div class="popup-content">
       <h2>Game Over</h2>
