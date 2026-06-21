@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/icons/cake.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Cake Stack Game</title>
+  </head>
+<body>
+  <div id="loading-screen">
+    <img src="/icons/logo.svg" alt="Cake Stack Game Logo" class="logo-image"> 
+    <div class="progress-bar-container"> 
+      <div id="progress-bar"></div>
+    </div>
+  </div>
+
+  <div id="score-container">
+    <img src="/icons/cup.svg" alt="Trophy Icon" class="score-icon-img">
+    <span id="score-value">0</span>
+  </div>
+
+  <div id="instructions" class="popup">
+    <div class="popup-content">
+      <h2>Instruction</h2>
+      <p>Stack the blocks on top of each other</p>
+      <p>Click, tap or press Space to start game</p>
+    </div>
+  </div>
+
+  <div id="results" class="popup">
+    <div class="popup-content">
+      <h2>Game Over</h2>
+      <p>Score</p>
+      <div id="final-score">0</div>
+      <button id="replay-btn">Replay</button>
+    </div>
+  </div> 
+
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
