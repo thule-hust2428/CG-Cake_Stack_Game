@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Cake Tower</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #000;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            user-select: none;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #score {
+            position: fixed;
+            top: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 64px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        #instructions {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            font-size: 22px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+            z-index: 10;
+            pointer-events: none;
+        }
+
+        #results {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            z-index: 20;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        #results h2 {
+            font-size: 36px;
+            margin-bottom: 12px;
+        }
+
+        #results p {
+            font-size: 18px;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">0</div>
+
+    <div id="instructions">
+        Click hoặc nhấn Space để bắt đầu<br />
+        Click / Space để thả khối
+    </div>
+
+    <div id="results">
+        <h2>Kết thúc!</h2>
+        <p>Click để chơi lại</p>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
