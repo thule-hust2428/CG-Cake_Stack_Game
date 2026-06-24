@@ -40,13 +40,13 @@ const replayBtn = document.getElementById("replay-btn")
 // Image Assets (Textures)
 const textureLoader = new THREE.TextureLoader()
 const cakeTextures = [
-    textureLoader.load('/textures/cake1.png'),
-    textureLoader.load('/textures/cake2.png'),
-    textureLoader.load('/textures/cake3.png'),
-    textureLoader.load('/textures/cake4.png'),
-    textureLoader.load('/textures/cake5.png'),
-    textureLoader.load('/textures/cake6.png'),
-    textureLoader.load('/textures/cake7.png')
+    textureLoader.load('public/textures/cake1.png'),
+    textureLoader.load('public/textures/cake2.png'),
+    textureLoader.load('public/textures/cake3.png'),
+    textureLoader.load('public/textures/cake4.png'),
+    textureLoader.load('public/textures/cake5.png'),
+    textureLoader.load('public/textures/cake6.png'),
+    textureLoader.load('public/textures/cake7.png')
 ]
 
 // Environment
