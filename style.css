@@ -33,7 +33,7 @@ canvas {
   align-items: center;
   justify-content: center;
 
-  background-image: url('/textures/loading_background.jpg'); 
+  background-image: url('public/textures/loading_background.jpg'); 
   background-size: cover;       
   background-position: center;  
   background-repeat: no-repeat; 
