@@ -76,8 +76,8 @@ function init() {
     stack = []
 
     const aspect = window.innerWidth / window.innerHeight
-    const width = 10
-    const height = width / aspect
+    const height = 11.1                  
+    const width = height * aspect
 
     camera = new THREE.OrthographicCamera(
         width / -2,
@@ -616,6 +616,7 @@ window.addEventListener('resize', ()=> {
     updateBackgroundFollowCamera()  
     updateBackgroundLayout()
 
+    renderer.setPixelRatio(window.devicePixelRatio)
     renderer.setSize(window.innerWidth, window.innerHeight)
     renderer.render(scene, camera)
 })
