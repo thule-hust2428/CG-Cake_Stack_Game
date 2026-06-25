@@ -1,6 +1,4 @@
-# -CG-Cake_Stack_Game
-
-# 🎂 Cake Stack Game
+## 🎂 Cake Stack Game
 
 A browser-based stacking game inspired by the "Cake Tower" minigame from *My Talking Tom*.  
 Stack cake layers as high as possible — the misaligned part gets sliced off, and it's game over when you miss completely.
